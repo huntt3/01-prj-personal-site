@@ -1,1 +1,40 @@
-/* Add you CSS here */
+/* Basic styles for your personal website */
+
+/* Set a background color and font for the whole page */
+body {
+  background-color: #f9f9f9; /* Light gray background */
+  font-family: Arial, sans-serif; /* Simple, easy-to-read font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style each section with some space around it */
+section {
+  background-color: #fff; /* White background for sections */
+  margin: 20px auto; /* Space above and below each section */
+  padding: 20px; /* Space inside each section */
+  max-width: 600px; /* Limit the width for easy reading */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Small shadow */
+}
+
+/* Center the text in the hero section */
+.hero {
+  text-align: center;
+}
+
+/* Make section headings stand out */
+h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+/* Style the skills and portfolio lists */
+ul {
+  padding-left: 20px;
+}
+
+/* Add a little space between list items */
+li {
+  margin-bottom: 8px;
+}
