@@ -1,9 +1,12 @@
 /* Basic styles for your personal website */
 
+/* Importing Google Font: Josefin Sans */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 /* Color palette based on #ADD8E6 (light blue) */
 :root {
   --primary: #ADD8E6;      /* Light Blue */
-  --primary-dark: #20344c; /* Slightly darker blue */
+  --primary-dark: #005983; /* Slightly darker blue */
   --accent: #D7CEC7;       /* Very light background */
   --text: #0077b5;         /* Dark text */
   --section-bg: #fbf3d4;   /* Section background */
@@ -16,7 +19,7 @@ body {
   background-color: var(--accent);
   color: var(--text);
   padding-top: 70px; /* Add space at the top of the page so the fixed navbar doesn't cover content */
-  font-family: Arial, sans-serif; /* Simple, easy-to-read font */
+  font-family: 'Josefin Sans', Arial, sans-serif; /* Use Josefin Sans for the whole site */
   margin: 0;
 }
 
@@ -28,6 +31,8 @@ section {
   margin: 20px auto; /* Space above and below each section */
   max-width: 600px; /* Limit the width for easy reading */
   padding: 20px; /* Space inside each section */
+  color: var(--text);
+  font-family: 'Josefin Sans', Arial, sans-serif;
 }
 
 /* Navbar styles */
@@ -86,4 +91,28 @@ li {
 .icons:hover i {
   color: #005983;     /* Darker blue on hover */
   transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+.projects-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between boxes */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+.project-box {
+  background: #fff;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 20px 30px;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: transform 0.2s;
+}
+
+.project-box:hover {
+  transform: translateY(-5px) scale(1.03);
+  border-color: var(--primary-dark);
 }
