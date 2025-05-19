@@ -3,11 +3,12 @@
 /* Color palette based on #ADD8E6 (light blue) */
 :root {
   --primary: #ADD8E6;      /* Light Blue */
-  --primary-dark: #7bb6d6; /* Slightly darker blue */
+  --primary-dark: #20344c; /* Slightly darker blue */
   --accent: #D7CEC7;       /* Very light background */
-  --text: #222f3e;         /* Dark text */
-  --section-bg: #e6f3fa;   /* Section background */
-  --navbar-bg: #b8e0f5;    /* Navbar background */
+  --text: #0077b5;         /* Dark text */
+  --section-bg: #fbf3d4;   /* Section background */
+  --navbar-bg: #b6c1ce;    /* Navbar background */
+  --footer-bg: #565656;    /* Footer background */
 }
 
 /* Set a background color and font for the whole page */
@@ -31,16 +32,11 @@ section {
 
 /* Navbar styles */
 .navbar {
-  background-color: var(--navbar-bg) !important;
-}
-
-.navbar .navbar-brand {
-  color: var(--primary-dark) !important;
-  font-weight: bold;
+  background-color: var(--navbar-bg);
 }
 
 .navbar .nav-link {
-  color: var(--text) !important;
+  color: var(--primary-dark) !important;
 }
 
 .navbar .nav-link:hover {
@@ -49,6 +45,7 @@ section {
 
 /* Center the text in the hero section */
 .hero {
+  color: var(--primary-dark);
   text-align: center;
 }
 
