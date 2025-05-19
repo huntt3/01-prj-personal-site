@@ -1,21 +1,50 @@
 /* Basic styles for your personal website */
 
+/* Color palette based on #ADD8E6 (light blue) */
+:root {
+  --primary: #ADD8E6;      /* Light Blue */
+  --primary-dark: #7bb6d6; /* Slightly darker blue */
+  --accent: #D7CEC7;       /* Very light background */
+  --text: #222f3e;         /* Dark text */
+  --section-bg: #e6f3fa;   /* Section background */
+  --navbar-bg: #b8e0f5;    /* Navbar background */
+}
+
 /* Set a background color and font for the whole page */
 body {
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: var(--accent);
+  color: var(--text);
+  padding-top: 70px; /* Add space at the top of the page so the fixed navbar doesn't cover content */
   font-family: Arial, sans-serif; /* Simple, easy-to-read font */
   margin: 0;
-  padding: 0;
 }
 
 /* Style each section with some space around it */
 section {
-  background-color: #fff; /* White background for sections */
-  margin: 20px auto; /* Space above and below each section */
-  padding: 20px; /* Space inside each section */
-  max-width: 600px; /* Limit the width for easy reading */
+  background-color: var(--section-bg); /* White background for sections */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Small shadow */
+  margin: 20px auto; /* Space above and below each section */
+  max-width: 600px; /* Limit the width for easy reading */
+  padding: 20px; /* Space inside each section */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+}
+
+.navbar .navbar-brand {
+  color: var(--primary-dark) !important;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: var(--text) !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary-dark) !important;
 }
 
 /* Center the text in the hero section */
@@ -25,7 +54,7 @@ section {
 
 /* Make section headings stand out */
 h2 {
-  color: #333;
+  color: var(--primary-dark);
   margin-top: 0;
 }
 
