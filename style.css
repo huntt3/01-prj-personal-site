@@ -41,7 +41,7 @@ section {
 }
 
 .navbar .nav-link {
-  color: var(--primary-dark) !important;
+  color: #fff !important;
 }
 
 .navbar .nav-link:hover {
