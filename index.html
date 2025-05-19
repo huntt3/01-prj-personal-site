@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="style.css">
   <!-- Add Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Add Font Awesome CSS for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
   <!-- Bootstrap Navbar Start -->
@@ -70,9 +72,12 @@
     <!-- A list of your skills -->
     <h2>My Skills</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (learning)</li>
+      <!-- Using Font Awesome icons for each skill -->
+      <li><i class="fab fa-python" aria-hidden="true"></i> Python</li>
+      <li><i class="fas fa-code" aria-hidden="true"></i> C#</li>
+      <li><i class="fab fa-html5" aria-hidden="true"></i> HTML</li>
+      <li><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</li>
+      <li><i class="fas fa-database"></i> Oracle SQL</li>
     </ul>
   </section>
 
@@ -90,8 +95,15 @@
   <section class="contact" id="contact">
     <!-- How people can reach you -->
     <h2>Contact Me</h2>
-    <p>Email: trevorhunt987@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/trevor--hunt/" target="_blank">Trevor Hunt</a></p>
+    <!-- LinkedIn icon is now a clickable link -->
+    <a href="https://www.linkedin.com/in/trevor--hunt/" target="_blank" class="icons">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://github.com/huntt3" target="_blank" class="icons">
+      <i class="fab fa-github"></i>
+    </a>
+
   </section>
 
   <!-- Add Bootstrap JS and dependencies -->

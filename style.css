@@ -38,3 +38,26 @@ ul {
 li {
   margin-bottom: 8px;
 }
+
+/* Centers contacts */
+.contact {
+  text-align: center;
+}
+
+/* Make the LinkedIn and GitHub icons further apart in the contact section */
+.icons {
+  margin: 0 16px; /* Adds space to left and right of each icon */
+  display: inline-block;
+}
+
+/* Make the LinkedIn icon larger and add a hover effect */
+.icons i {
+  font-size: 2.5rem; /* Makes the icon larger */
+  color: #0077b5;    /* LinkedIn blue */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icons:hover i {
+  color: #005983;     /* Darker blue on hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
