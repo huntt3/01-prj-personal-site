@@ -37,7 +37,7 @@ section {
 
 /* Navbar styles */
 .navbar {
-  background-color: var(--navbar-bg);
+  background-color: var(--footer-bg);
 }
 
 .navbar .nav-link {
@@ -115,4 +115,15 @@ li {
 .project-box:hover {
   transform: translateY(-5px) scale(1.03);
   border-color: var(--primary-dark);
+}
+
+/* Footer styles */
+.footer {
+  background-color: var(--footer-bg);
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  border-radius: 0 0 8px 8px;
 }
